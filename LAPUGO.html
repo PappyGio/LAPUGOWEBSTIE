@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LapuGo Travel Agency</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#fff9f7] text-slate-800">
+
+<!-- ================= NAVBAR ================= -->
+
+<header id="navbar"
+    class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- LOGO -->
+
+            <a href="#home" class="flex items-center gap-3">
+
+                <div class="w-10 h-10 rounded-xl bg-white text-pink-500
+                            flex items-center justify-center shadow-lg">
+
+                    <i data-lucide="compass"></i>
+
+                </div>
+
+                <span class="text-2xl font-extrabold text-white">
+                    Lapu<span class="text-pink-300">Go</span>
+                </span>
+
+            </a>
+
+
+            <!-- DESKTOP NAV -->
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-white">
+
+                <a href="#home" class="nav-link">Home</a>
+
+                <a href="#packages" class="nav-link">Packages</a>
+
+                <a href="#experiences" class="nav-link">Experiences</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <button
+                    onclick="openBooking()"
+                    class="bg-white text-pink-500 px-5 py-3 rounded-full
+                           hover:-translate-y-1 transition flex items-center gap-2">
+
+                    Plan My Trip
+
+                    <i data-lucide="arrow-right" class="w-4"></i>
+
+                </button>
+
+            </nav>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button
+                id="menuButton"
+                class="md:hidden text-white bg-white/10 p-2 rounded-lg">
+
+                <i data-lucide="menu"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE NAV -->
+
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-slate-900 rounded-2xl p-5 mb-4">
+
+            <a href="#home" class="mobile-link">Home</a>
+
+            <a href="#packages" class="mobile-link">Packages</a>
+
+            <a href="#experiences" class="mobile-link">Experiences</a>
+
+            <a href="#about" class="mobile-link">About</a>
+
+            <button
+                onclick="openBooking()"
+                class="w-full bg-pink-500 text-white py-3 rounded-xl font-bold mt-3">
+
+                Plan My Trip
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home"
+    class="relative min-h-[720px] flex items-center overflow-hidden">
+
+    <!--
+        IMAGE PLACEHOLDER
+
+        Replace this URL with your own image.
+
+        Example:
+
+        images/lapu-lapu.jpg
+    -->
+
+    <div class="absolute inset-0">
+
+        <img
+            src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=2000&q=85"
+            alt="Tropical island"
+            class="w-full h-full object-cover">
+
+    </div>
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="absolute inset-0 bg-gradient-to-r
+                from-[#07182d]/95 via-[#112c46]/75 to-pink-500/20">
+    </div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10
+                pt-28 w-full">
+
+        <div class="max-w-3xl">
+
+            <div class="inline-flex items-center gap-2
+                        border border-white/20 bg-white/10
+                        backdrop-blur-md text-white
+                        rounded-full px-4 py-2 text-xs font-bold">
+
+                <i data-lucide="sparkles" class="w-4"></i>
+
+                YOUR CEBU ADVENTURE STARTS HERE
+
+            </div>
+
+
+            <h1 class="font-jakarta text-6xl md:text-8xl
+                       font-extrabold leading-[0.95]
+                       tracking-tight text-white mt-7">
+
+                Go farther.<br>
+
+                <span class="text-pink-400">
+                    Feel more.
+                </span>
+
+            </h1>
+
+
+            <p class="text-lg text-slate-200 leading-relaxed
+                      max-w-2xl mt-7">
+
+                Discover Lapu-Lapu, Cebu and beyond with
+                colorful experiences, easy booking and
+                unforgettable island adventures.
+
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="flex flex-col sm:flex-row gap-3 mt-8">
+
+                <a href="#packages"
+                    class="bg-pink-500 hover:bg-pink-600
+                           text-white px-6 py-4 rounded-xl
+                           font-bold flex justify-center
+                           items-center gap-2 transition
+                           hover:-translate-y-1">
+
+                    Explore Packages
+
+                    <i data-lucide="arrow-right" class="w-5"></i>
+
+                </a>
+
+
+                <a href="#experiences"
+                    class="border border-white/30
+                           bg-white/10 backdrop-blur-md
+                           text-white px-6 py-4 rounded-xl
+                           font-bold flex justify-center
+                           transition hover:bg-white/20">
+
+                    See Experiences
+
+                </a>
+
+            </div>
+
+
+            <!-- RATING -->
+
+            <div class="flex items-center gap-4 mt-10">
+
+                <div class="flex -space-x-2">
+
+                    <div class="avatar">J</div>
+                    <div class="avatar bg-pink-400">M</div>
+                    <div class="avatar bg-purple-400">A</div>
+                    <div class="avatar bg-slate-700">+</div>
+
+                </div>
+
+                <div>
+
+                    <p class="text-white font-bold">
+                        4.9/5 traveler rating
+                    </p>
+
+                    <p class="text-slate-300 text-sm">
+                        Happy travelers & memorable days
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FEATURE CARD -->
+
+    <div class="hidden lg:block absolute right-12 bottom-20
+                bg-white rounded-3xl p-6 w-72 shadow-2xl
+                rotate-2">
+
+        <p class="text-pink-500 uppercase tracking-widest
+                  text-xs font-bold">
+
+            Today's Featured
+
+        </p>
+
+        <h3 class="font-jakarta font-extrabold
+                   text-xl mt-2">
+
+            Mactan Island<br>
+            Hopping Escape
+
+        </h3>
+
+        <div class="flex gap-2 text-slate-500 text-xs mt-3">
+
+            <span>1 Day</span>
+
+            <span>•</span>
+
+            <span>2–12 pax</span>
+
+        </div>
+
+        <p class="font-jakarta font-extrabold text-2xl mt-5">
+            ₱2,499
+            <span class="text-xs text-slate-400 font-normal">
+                / person
+            </span>
+        </p>
+
+        <button
+            onclick="showPackage('mactan')"
+            class="w-full bg-slate-900 text-white
+                   py-3 rounded-xl mt-4 font-bold">
+
+            View Trip →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="bg-slate-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10
+                grid grid-cols-2 md:grid-cols-4">
+
+        <div class="stat">
+            <strong>20+</strong>
+            <span>Local experiences</span>
+        </div>
+
+        <div class="stat">
+            <strong>4.9★</strong>
+            <span>Sample traveler rating</span>
+        </div>
+
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>Trip support concept</span>
+        </div>
+
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Easy-to-understand plans</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY LAPUGO ================= -->
+
+<section id="experiences" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="max-w-3xl mx-auto text-center">
+
+            <p class="section-label">
+                WHY LAPUGO?
+            </p>
+
+            <h2 class="section-title">
+
+                Travel should feel
+                <span>exciting</span>,
+                not complicated.
+
+            </h2>
+
+            <p class="text-slate-500 leading-relaxed">
+
+                From a quick Mactan island escape to a
+                multi-day Cebu adventure, LapuGo keeps
+                the important details clear.
+
+            </p>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4
+                    gap-5 mt-14">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i data-lucide="waves"></i>
+                </div>
+
+                <h3>Island Life</h3>
+
+                <p>
+                    Easy access to Mactan's marine
+                    adventures and island experiences.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i data-lucide="camera"></i>
+                </div>
+
+                <h3>Photo Ready</h3>
+
+                <p>
+                    Discover beautiful places with
+                    photo stops for your memories.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i data-lucide="utensils"></i>
+                </div>
+
+                <h3>Local Flavors</h3>
+
+                <p>
+                    Add food experiences and discover
+                    Cebuano flavors along the way.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+
+                <h3>Easy Booking</h3>
+
+                <p>
+                    Clear package details before
+                    you make your travel request.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section id="packages" class="py-24 bg-[#faf5f3]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="flex flex-col lg:flex-row
+                    justify-between lg:items-end gap-5">
+
+            <div>
+
+                <p class="section-label">
+                    TRIP PICKS
+                </p>
+
+                <h2 class="section-title">
+                    Find your next
+                    <span>favorite place.</span>
+                </h2>
+
+            </div>
+
+            <p class="max-w-md text-slate-500 text-sm leading-relaxed">
+
+                Browse our sample travel packages.
+                Replace the destinations, prices and
+                inclusions with your actual agency offers.
+
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH + FILTER -->
+
+        <div class="flex flex-col lg:flex-row
+                    justify-between gap-4 mt-10">
+
+            <div class="search-container">
+
+                <i data-lucide="search" class="w-5"></i>
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search Cebu, island hopping..."
+                    onkeyup="filterPackages()">
+
+            </div>
+
+
+            <div class="flex flex-wrap gap-2">
+
+                <button class="filter-btn active"
+                    onclick="setCategory('All', this)">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                    onclick="setCategory('Lapu-Lapu', this)">
+                    Lapu-Lapu
+                </button>
+
+                <button class="filter-btn"
+                    onclick="setCategory('Cebu', this)">
+                    Cebu
+                </button>
+
+                <button class="filter-btn"
+                    onclick="setCategory('Bohol', this)">
+                    Bohol
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PACKAGE CARDS -->
+
+        <div id="packageContainer"
+             class="grid md:grid-cols-2 lg:grid-cols-3
+                    gap-6 mt-8">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURE BANNER ================= -->
+
+<section class="mx-6 lg:mx-16 my-20">
+
+    <div class="relative overflow-hidden rounded-[2rem]
+                bg-gradient-to-r from-pink-600
+                via-fuchsia-600 to-purple-600
+                text-white p-8 md:p-16">
+
+        <div class="relative z-10 max-w-2xl">
+
+            <p class="text-pink-100 uppercase tracking-widest
+                      text-xs font-bold">
+
+                MACTAN IN A DAY
+
+            </p>
+
+            <h2 class="font-jakarta text-4xl md:text-5xl
+                       font-extrabold leading-tight mt-3">
+
+                Sea, sun, food & stories —
+                all in one colorful day.
+
+            </h2>
+
+            <p class="text-pink-100 leading-relaxed mt-5">
+
+                Our sample Lapu-Lapu package combines
+                island hopping, snorkeling, lunch and
+                free time.
+
+            </p>
+
+            <button
+                onclick="showPackage('mactan')"
+                class="mt-7 bg-white text-pink-600
+                       px-6 py-3 rounded-xl font-bold
+                       hover:-translate-y-1 transition">
+
+                Build This Trip →
+
+            </button>
+
+        </div>
+
+
+        <div class="absolute right-0 top-0 w-1/2 h-full
+                    opacity-20 hidden md:block">
+
+            <!-- YOUR IMAGE CAN GO HERE -->
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+                class="w-full h-full object-cover"
+                alt="Beach">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="about" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="text-center">
+
+            <p class="section-label">
+                HOW IT WORKS
+            </p>
+
+            <h2 class="section-title">
+                Three steps to your
+                <span>next adventure.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-8 mt-14">
+
+            <div class="step-card">
+
+                <span>01</span>
+
+                <i data-lucide="compass"></i>
+
+                <h3>Pick a trip</h3>
+
+                <p>
+                    Browse packages based on your
+                    schedule, interests and budget.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span>02</span>
+
+                <i data-lucide="message-circle"></i>
+
+                <h3>Tell us what you need</h3>
+
+                <p>
+                    Choose your date, number of travelers
+                    and preferred activities.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span>03</span>
+
+                <i data-lucide="sparkles"></i>
+
+                <h3>Enjoy Cebu</h3>
+
+                <p>
+                    Receive your itinerary and get ready
+                    for an organized travel experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="mx-6 lg:mx-16 mb-20">
+
+    <div class="bg-pink-100 rounded-[2rem]
+                px-7 py-12 md:px-14
+                flex flex-col md:flex-row
+                justify-between items-center gap-8">
+
+        <div>
+
+            <p class="section-label">
+                READY WHEN YOU ARE
+            </p>
+
+            <h2 class="font-jakarta text-4xl
+                       md:text-5xl font-extrabold
+                       tracking-tight">
+
+                Let's make your next trip
+                <span class="text-pink-500">
+                    worth remembering.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <button
+            onclick="openBooking()"
+            class="bg-pink-500 text-white
+                   px-7 py-4 rounded-xl
+                   font-bold whitespace-nowrap
+                   hover:bg-pink-600
+                   transition">
+
+            Plan My Trip →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-slate-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10
+                py-16 grid sm:grid-cols-2
+                lg:grid-cols-4 gap-10">
+
+        <div>
+
+            <div class="flex items-center gap-3">
+
+                <div class="w-10 h-10 bg-white text-pink-500
+                            rounded-xl flex items-center
+                            justify-center">
+
+                    <i data-lucide="compass"></i>
+
+                </div>
+
+                <span class="text-2xl font-extrabold">
+                    Lapu<span class="text-pink-400">Go</span>
+                </span>
+
+            </div>
+
+            <p class="text-slate-400 text-sm leading-relaxed mt-5">
+
+                Travel easy. Explore more.<br>
+                Based in Lapu-Lapu City, Cebu.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4 class="font-bold mb-4">
+                Explore
+            </h4>
+
+            <a href="#packages" class="footer-link">
+                Packages
+            </a>
+
+            <a href="#experiences" class="footer-link">
+                Experiences
+            </a>
+
+            <a href="#about" class="footer-link">
+                How it Works
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4 class="font-bold mb-4">
+                Contact
+            </h4>
+
+            <p class="footer-text">
+                hello@lapugo.example
+            </p>
+
+            <p class="footer-text">
+                +63 900 000 0000
+            </p>
+
+            <p class="footer-text">
+                Lapu-Lapu City, Cebu
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4 class="font-bold mb-4">
+                Travel Note
+            </h4>
+
+            <p class="footer-text">
+
+                Package prices, schedules and availability
+                are sample content and should be replaced
+                with your actual agency details.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="border-t border-white/10
+                max-w-7xl mx-auto px-6 lg:px-10
+                py-5 flex justify-between
+                text-xs text-slate-500">
+
+        <span>
+            © 2026 LapuGo Travel Agency
+        </span>
+
+        <span>
+            Made for easy island days.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= PACKAGE MODAL ================= -->
+
+<div id="packageModal"
+     class="modal hidden">
+
+    <div class="modal-box max-w-4xl">
+
+        <button onclick="closePackage()"
+            class="modal-close">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="grid md:grid-cols-5">
+
+            <img id="modalImage"
+                 class="md:col-span-2 w-full h-64 md:h-full
+                        object-cover"
+                 alt="Package image">
+
+
+            <div class="md:col-span-3 p-7 md:p-10">
+
+                <p id="modalCategory"
+                   class="section-label">
+                </p>
+
+                <h2 id="modalTitle"
+                    class="font-jakarta text-3xl
+                           font-extrabold mt-2">
+                </h2>
+
+                <p id="modalDescription"
+                   class="text-slate-500 text-sm
+                          leading-relaxed mt-4">
+                </p>
+
+
+                <div class="flex flex-wrap gap-3
+                            border-y border-slate-100
+                            py-5 mt-5 text-xs">
+
+                    <span id="modalDuration"></span>
+
+                    <span>•</span>
+
+                    <span>2–12 pax</span>
+
+                    <span>•</span>
+
+                    <span>⭐ <span id="modalRating"></span></span>
+
+                </div>
+
+
+                <h4 class="font-bold mt-6 mb-3">
+                    Sample Itinerary
+                </h4>
+
+                <div id="modalSchedule"
+                     class="space-y-2">
+                </div>
+
+
+                <h4 class="font-bold mt-6 mb-3">
+                    Inclusions
+                </h4>
+
+                <div id="modalInclusions"
+                     class="flex flex-wrap gap-2">
+                </div>
+
+
+                <div class="flex items-end
+                            justify-between gap-4
+                            border-t border-slate-100
+                            pt-5 mt-6">
+
+                    <div>
+
+                        <p class="text-[9px]
+                                  tracking-widest
+                                  text-slate-400">
+                            FROM
+                        </p>
+
+                        <strong id="modalPrice"
+                                class="font-jakarta
+                                       text-2xl">
+                        </strong>
+
+                        <span class="text-xs text-slate-400">
+                            / person
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        onclick="bookSelectedPackage()"
+                        class="bg-pink-500 text-white
+                               px-5 py-3 rounded-xl
+                               font-bold">
+
+                        Request Booking
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= BOOKING MODAL ================= -->
+
+<div id="bookingModal"
+     class="modal hidden">
+
+    <div class="modal-box max-w-xl p-8">
+
+        <button onclick="closeBooking()"
+            class="modal-close">
+
+            <i data-lucide="x"></i>
+
+        </button>
+
+
+        <div class="w-12 h-12 rounded-xl
+                    bg-pink-100 text-pink-500
+                    flex items-center justify-center">
+
+            <i data-lucide="plane"></i>
+
+        </div>
+
+
+        <p class="section-label mt-5">
+            PLAN YOUR TRIP
+        </p>
+
+        <h2 class="font-jakarta text-3xl
+                   font-extrabold mt-2">
+
+            Let's start with the basics.
+
+        </h2>
+
+        <p class="text-slate-500 text-sm mt-2">
+
+            Tell us a little about your trip
+            and our travel team can assist you.
+
+        </p>
+
+
+        <form id="bookingForm"
+              class="space-y-4 mt-7">
+
+
+            <div>
+
+                <label>Package</label>
+
+                <select id="bookingPackage">
+
+                    <option value="">
+                        I need help choosing
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 gap-4">
+
+                <div>
+
+                    <label>Your Name</label>
+
+                    <input
+                        type="text"
+                        required
+                        placeholder="Your name">
+
+                </div>
+
+
+                <div>
+
+                    <label>Travelers</label>
+
+                    <select>
+
+                        <option>2 travelers</option>
+                        <option>3–5 travelers</option>
+                        <option>6–12 travelers</option>
+                        <option>13+ travelers</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 gap-4">
+
+                <div>
+
+                    <label>Preferred Date</label>
+
+                    <input
+                        type="date"
+                        required>
+
+                </div>
+
+
+                <div>
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        required
+                        placeholder="you@example.com">
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <label>Message</label>
+
+                <textarea
+                    placeholder="Tell us about your preferred activities..."
+                    rows="4"></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="w-full bg-pink-500
+                       hover:bg-pink-600
+                       text-white py-4 rounded-xl
+                       font-bold transition">
+
+                Send Travel Request →
+
+            </button>
+
+
+            <p class="text-center text-xs
+                      text-slate-400">
+
+                Demo form — connect this to your
+                actual booking system later.
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

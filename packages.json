@@ -1,0 +1,141 @@
+[
+    {
+        "id": "mactan",
+        "category": "Lapu-Lapu",
+        "title": "Mactan Island Hopping Escape",
+        "location": "Mactan • Caohagan • Nalusuan",
+        "duration": "1 Day",
+        "price": 2499,
+        "rating": 4.9,
+        "badge": "Most Loved",
+
+        "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+
+        "description": "A full-day island adventure featuring snorkeling, island exploration, local food and relaxing beach time.",
+
+        "inclusions": [
+            "Boat & local crew",
+            "Snorkeling gear",
+            "Island fees",
+            "Lunch & drinks",
+            "Photo stops"
+        ],
+
+        "schedule": [
+            {
+                "time": "07:30",
+                "activity": "Meet-up & safety briefing"
+            },
+            {
+                "time": "08:00",
+                "activity": "Depart Mactan"
+            },
+            {
+                "time": "09:00",
+                "activity": "Snorkeling & marine viewing"
+            },
+            {
+                "time": "11:00",
+                "activity": "Caohagan Island beach time"
+            },
+            {
+                "time": "12:30",
+                "activity": "Fresh island lunch"
+            },
+            {
+                "time": "14:00",
+                "activity": "Nalusuan swimming & photos"
+            },
+            {
+                "time": "16:00",
+                "activity": "Return to Mactan"
+            }
+        ]
+    },
+
+
+    {
+        "id": "cebu",
+        "category": "Cebu",
+        "title": "Cebu Highlights Getaway",
+        "location": "Cebu City • Heritage • Local Food",
+        "duration": "3 Days / 2 Nights",
+        "price": 8999,
+        "rating": 4.8,
+        "badge": "City Escape",
+
+        "image": "https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=1200&q=85",
+
+        "description": "A beginner-friendly Cebu package combining heritage attractions, local food, city sightseeing and comfortable accommodation.",
+
+        "inclusions": [
+            "2-night hotel stay",
+            "Airport/port transfers",
+            "Guided city tour",
+            "Breakfast",
+            "Entrance fees"
+        ],
+
+        "schedule": [
+            {
+                "time": "DAY 1",
+                "activity": "Arrival • hotel check-in • Cebu heritage tour"
+            },
+            {
+                "time": "DAY 2",
+                "activity": "Cebu City highlights • local food experience"
+            },
+            {
+                "time": "DAY 3",
+                "activity": "Free time • transfer to airport or port"
+            }
+        ]
+    },
+
+
+    {
+        "id": "bohol",
+        "category": "Bohol",
+        "title": "Bohol Countryside Discovery",
+        "location": "Panglao • Loboc • Chocolate Hills",
+        "duration": "1 Day",
+        "price": 3499,
+        "rating": 4.9,
+        "badge": "Day Trip",
+
+        "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=85",
+
+        "description": "Explore Bohol's famous countryside attractions with a river cruise, local food and iconic scenery.",
+
+        "inclusions": [
+            "Round-trip transfers",
+            "Tour coordinator",
+            "Lunch",
+            "Entrance fees",
+            "Bohol day tour"
+        ],
+
+        "schedule": [
+            {
+                "time": "06:30",
+                "activity": "Cebu departure"
+            },
+            {
+                "time": "09:00",
+                "activity": "Bohol countryside tour"
+            },
+            {
+                "time": "12:00",
+                "activity": "Loboc River lunch cruise"
+            },
+            {
+                "time": "14:30",
+                "activity": "Chocolate Hills"
+            },
+            {
+                "time": "17:00",
+                "activity": "Return transfer"
+            }
+        ]
+    }
+]
